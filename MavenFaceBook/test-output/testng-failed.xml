@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="FaceBook.VerifyLoginButton">
+        <methods>
+          <include name="logoutFromApplication"/>
+          <include name="openLoginPage"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="VerifyLoginIn"/>
+        </methods>
+      </class> <!-- FaceBook.VerifyLoginButton -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="FaceBook.VerifyLoginButton">
+        <methods>
+          <include name="logoutFromApplication"/>
+          <include name="openLoginPage"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="VerifyLoginIn"/>
+        </methods>
+      </class> <!-- FaceBook.VerifyLoginButton -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
