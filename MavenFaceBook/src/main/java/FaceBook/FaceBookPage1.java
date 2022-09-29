@@ -15,31 +15,31 @@ public class FaceBookPage1 {
 	        
 	       // Declaration
 	       
-// 			@FindBy (xpath = "//input[@id = 'email']")  
-// 			private WebElement userName;
+ 			@FindBy (xpath = "//input[@id = 'email']")  
+ 			private WebElement userName;
 			
-// 			@FindBy (xpath = "//input[@id = 'pass']")
-// 			private WebElement passWord;
+         	@FindBy (xpath = "//input[@id = 'pass']")
+ 			private WebElement passWord;
 			
-// 			//@FindBy (xpath = "//button[text() = 'Log In']")
-// 			//private WebElement logInButton;
+ 			//@FindBy (xpath = "//button[text() = 'Log In']")
+ 			//private WebElement logInButton;
 			
-// 			//@FindBy (xpath = "//a[text() = 'Create New Account']")
-// 			//private WebElement createNewAccount;
+ 			//@FindBy (xpath = "//a[text() = 'Create New Account']")
+ 			//private WebElement createNewAccount;
 			
-// 			@FindBy (xpath = "//a[text() = 'Messenger']")
-// 			private WebElement messenger;
+ 			@FindBy (xpath = "//a[text() = 'Messenger']")
+ 			private WebElement messenger;
 			
-// 			@FindBy (xpath = "//a[text() = 'Rooms']")
-// 			private WebElement room;
+ 			@FindBy (xpath = "//a[text() = 'Rooms']")
+ 			private WebElement room;
 			
-// 			@FindBy(xpath = "//a[text() = ' Return to messenger.com ']")
-// 			private WebElement returnToMessenger;
+ 			@FindBy(xpath = "//a[text() = ' Return to messenger.com ']")
+ 			private WebElement returnToMessenger;
 			
-// 			@FindBy(xpath = "//a[text() = ' Visit our help center ']")
-// 			private WebElement helpCenter;
+ 			@FindBy(xpath = "//a[text() = ' Visit our help center ']")
+ 			private WebElement helpCenter;
 			
-// 			//Initialization
+			//Initialization
 			
 			public FaceBookPage1(WebDriver driver) {
 				
