@@ -8,6 +8,7 @@
           <include name="logoutFromApplication"/>
           <include name="openLoginPage"/>
           <include name="openBrowser"/>
+          <include name="openBrowser"/>
           <include name="closeBrowser"/>
           <include name="VerifyLoginIn"/>
         </methods>
