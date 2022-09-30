@@ -1,140 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T22:27:14 IST" name="Suite" finished-at="2022-09-26T22:34:33 IST" duration-ms="439138">
+  <suite started-at="2022-09-29T22:54:34 IST" name="Suite" finished-at="2022-09-29T23:01:52 IST" duration-ms="437881">
     <groups>
     </groups>
-    <test started-at="2022-09-26T22:27:14 IST" name="ChromeTest" finished-at="2022-09-26T22:28:32 IST" duration-ms="78792">
+    <test started-at="2022-09-29T22:54:34 IST" name="ChromeTest" finished-at="2022-09-29T22:57:35 IST" duration-ms="180620">
       <class name="FaceBook.VerifyLoginButton">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de]" started-at="2022-09-26T22:27:18 IST" name="openBrowser" finished-at="2022-09-26T22:27:22 IST" duration-ms="4610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de]" started-at="2022-09-26T22:27:22 IST" name="openLoginPage" finished-at="2022-09-26T22:27:47 IST" duration-ms="25237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openLoginPage -->
-        <test-method signature="VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de]" started-at="2022-09-26T22:27:47 IST" name="VerifyLoginIn" finished-at="2022-09-26T22:28:18 IST" duration-ms="30792" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cbfa7c02d7c3a63eb757ed306aee358f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cbfa7c02d7c3a63eb757ed306aee358f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-at FaceBook.VerifyLoginButton.VerifyLoginIn(VerifyLoginButton.java:86)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLoginIn -->
-        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de]" started-at="2022-09-26T22:28:18 IST" name="logoutFromApplication" finished-at="2022-09-26T22:28:30 IST" duration-ms="11462" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyLoginIn status=FAILURE method=VerifyLoginButton.VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cbfa7c02d7c3a63eb757ed306aee358f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cbfa7c02d7c3a63eb757ed306aee358f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Utils.Utility.captureScreenshot(Utility.java:22)
-at FaceBook.VerifyLoginButton.logoutFromApplication(VerifyLoginButton.java:99)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@1fa268de]" started-at="2022-09-26T22:28:30 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1664211510142" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- FaceBook.VerifyLoginButton -->
-      <class name="FaceBook.TestNg">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:14 IST" name="openBrowser" finished-at="2022-09-26T22:27:17 IST" duration-ms="3830" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:54:38 IST" name="openBrowser" finished-at="2022-09-29T22:54:41 IST" duration-ms="2360" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,182 +18,87 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="beforeClass" finished-at="2022-09-26T22:27:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="beforeMethod" finished-at="2022-09-26T22:27:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="test1" finished-at="2022-09-26T22:27:18 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="afterMethod" finished-at="2022-09-26T22:27:18 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="test2()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="test2" finished-at="2022-09-26T22:27:18 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="beforeMethod" finished-at="2022-09-26T22:27:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="afterMethod" finished-at="2022-09-26T22:27:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:27:18 IST" name="afterClass" finished-at="2022-09-26T22:27:18 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="closeBrowser1()[pri:0, instance:FaceBook.TestNg@7b9a4292]" started-at="2022-09-26T22:28:30 IST" name="closeBrowser1" finished-at="2022-09-26T22:28:32 IST" duration-ms="2796" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 56113f1d55b7d69eb12c5706c7b6377d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 56113f1d55b7d69eb12c5706c7b6377d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at FaceBook.TestNg.closeBrowser1(TestNg.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.afterRun(TestRunner.java:877)
-at org.testng.TestRunner.run(TestRunner.java:599)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser1 -->
-      </class> <!-- FaceBook.TestNg -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2022-09-26T22:28:33 IST" name="FirefoxTest" finished-at="2022-09-26T22:34:33 IST" duration-ms="360275">
-      <class name="FaceBook.VerifyLoginButton">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654]" started-at="2022-09-26T22:28:39 IST" name="openBrowser" finished-at="2022-09-26T22:28:45 IST" duration-ms="5602" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:54:41 IST" name="openBrowser" finished-at="2022-09-29T22:54:43 IST" duration-ms="2630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654]" started-at="2022-09-26T22:28:45 IST" name="openLoginPage" finished-at="2022-09-26T22:29:31 IST" duration-ms="46028" status="PASS">
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:54:43 IST" name="openLoginPage" finished-at="2022-09-29T22:55:06 IST" duration-ms="22798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openLoginPage -->
-        <test-method signature="VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654]" started-at="2022-09-26T22:29:31 IST" name="VerifyLoginIn" finished-at="2022-09-26T22:34:31 IST" duration-ms="300160" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a9301f9c78c91e187bc4d4e592a716d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PSK126', ip: '192.168.43.79', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a9301f9c78c91e187bc4d4e592a716d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at FaceBook.UtilityLogin.clickOnLogin(UtilityLogin.java:54)
-at FaceBook.VerifyLoginButton.VerifyLoginIn(VerifyLoginButton.java:83)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:55:06 IST" name="VerifyLoginIn" finished-at="2022-09-29T22:57:32 IST" duration-ms="146072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginIn -->
-        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654]" started-at="2022-09-26T22:34:31 IST" name="logoutFromApplication" finished-at="2022-09-26T22:34:32 IST" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:57:32 IST" name="logoutFromApplication" finished-at="2022-09-29T22:57:32 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginIn status=FAILURE method=VerifyLoginButton.VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLoginIn status=SUCCESS method=VerifyLoginButton.VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@35e2d654]" started-at="2022-09-26T22:34:32 IST" name="closeBrowser" finished-at="2022-09-26T22:34:32 IST" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@6b927fb]" started-at="2022-09-29T22:57:32 IST" name="closeBrowser" finished-at="2022-09-29T22:57:35 IST" duration-ms="2468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- FaceBook.VerifyLoginButton -->
       <class name="FaceBook.TestNg">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:33 IST" name="openBrowser" finished-at="2022-09-26T22:28:39 IST" duration-ms="6856" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:34 IST" name="openBrowser" finished-at="2022-09-29T22:54:38 IST" duration-ms="4014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="beforeClass" finished-at="2022-09-29T22:54:41 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="beforeMethod" finished-at="2022-09-29T22:54:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test1()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="test1" finished-at="2022-09-29T22:54:41 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="afterMethod" finished-at="2022-09-29T22:54:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="beforeMethod" finished-at="2022-09-29T22:54:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test2()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="test2" finished-at="2022-09-29T22:54:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="afterMethod" finished-at="2022-09-29T22:54:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:54:41 IST" name="afterClass" finished-at="2022-09-29T22:54:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeBrowser1()[pri:0, instance:FaceBook.TestNg@294425a7]" started-at="2022-09-29T22:57:35 IST" name="closeBrowser1" finished-at="2022-09-29T22:57:35 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser1 -->
+      </class> <!-- FaceBook.TestNg -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-09-29T22:57:35 IST" name="FirefoxTest" finished-at="2022-09-29T23:01:52 IST" duration-ms="257192">
+      <class name="FaceBook.VerifyLoginButton">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T22:57:40 IST" name="openBrowser" finished-at="2022-09-29T22:57:45 IST" duration-ms="4758" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -331,39 +109,79 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="beforeClass" finished-at="2022-09-26T22:28:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T22:57:45 IST" name="openBrowser" finished-at="2022-09-29T22:57:47 IST" duration-ms="2402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openLoginPage()[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T22:57:47 IST" name="openLoginPage" finished-at="2022-09-29T22:58:27 IST" duration-ms="39982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method signature="VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T22:58:27 IST" name="VerifyLoginIn" finished-at="2022-09-29T23:01:51 IST" duration-ms="203535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginIn -->
+        <test-method is-config="true" signature="logoutFromApplication(org.testng.ITestResult)[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T23:01:51 IST" name="logoutFromApplication" finished-at="2022-09-29T23:01:51 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginIn status=SUCCESS method=VerifyLoginButton.VerifyLoginIn()[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FaceBook.VerifyLoginButton@6cf0e0ba]" started-at="2022-09-29T23:01:51 IST" name="closeBrowser" finished-at="2022-09-29T23:01:51 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- FaceBook.VerifyLoginButton -->
+      <class name="FaceBook.TestNg">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:35 IST" name="openBrowser" finished-at="2022-09-29T22:57:40 IST" duration-ms="5107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="beforeClass" finished-at="2022-09-29T22:57:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="beforeMethod" finished-at="2022-09-26T22:28:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test1()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="test1" finished-at="2022-09-26T22:28:39 IST" duration-ms="3" status="PASS">
+        <test-method signature="test1()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="test1" finished-at="2022-09-29T22:57:45 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="afterMethod" finished-at="2022-09-26T22:28:39 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="test2()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="test2" finished-at="2022-09-26T22:28:39 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="beforeMethod" finished-at="2022-09-26T22:28:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="beforeMethod" finished-at="2022-09-29T22:57:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="afterClass" finished-at="2022-09-26T22:28:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:28:39 IST" name="afterMethod" finished-at="2022-09-26T22:28:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="afterMethod" finished-at="2022-09-29T22:57:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closeBrowser1()[pri:0, instance:FaceBook.TestNg@1bd4fdd]" started-at="2022-09-26T22:34:32 IST" name="closeBrowser1" finished-at="2022-09-26T22:34:33 IST" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="beforeMethod" finished-at="2022-09-29T22:57:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test2()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="test2" finished-at="2022-09-29T22:57:45 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="afterMethod" finished-at="2022-09-29T22:57:45 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T22:57:45 IST" name="afterClass" finished-at="2022-09-29T22:57:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeBrowser1()[pri:0, instance:FaceBook.TestNg@7d8995e]" started-at="2022-09-29T23:01:51 IST" name="closeBrowser1" finished-at="2022-09-29T23:01:52 IST" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser1 -->

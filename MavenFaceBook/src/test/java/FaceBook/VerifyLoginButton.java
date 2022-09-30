@@ -20,36 +20,34 @@ import org.testng.asserts.SoftAssert;
 import com.beust.jcommander.Parameter;
 
 import Utils.Utility;
+import setup.Base;
 
-public class VerifyLoginButton {
+public class VerifyLoginButton extends Base //import Base setup
+{
 	
 	private WebDriver driver;
 	private UtilityLogin utilityLogin;
 	private SoftAssert soft;
 	int testId;
 	
-//	@Parameters("browser")
-//	@BeforeTest 
-//	public void openBrowser(String browserName) {
-//			
-//     System.out.println(browserName);
-//			
-//	 if(browserName.equals("Chrome"))
-//	 {
-//		 System.setProperty("webdriver.chrome.driver","C:\\Users\\pooja\\OneDrive\\Documents\\Selenium\\chromedriver_win32\\chromedriver.exe");
-//			driver = new ChromeDriver();
-//			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-//	 }
-//	 if(browserName.equals("Firefox"))
-//		{
-//			System.setProperty("webdriver.gecko.driver","C:\\Users\\pooja\\OneDrive\\Documents\\Selenium\\chromedriver_win32\\geckodriver.exe");
-//			driver = new FirefoxDriver();
-//			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-//		}
-//			
-//
-//			
-//		}
+	@Parameters("browser")
+	@BeforeTest 
+	public void openBrowser(String browserName) {
+			
+     System.out.println(browserName);
+			
+	 if(browserName.equals("Chrome"))
+	 {
+		 driver = openChromeBrowser();
+	 }
+	 if(browserName.equals("Firefox"))
+		{
+			driver = openFirefoxBrowser();
+		}
+			
+
+			
+		}
 	
 	@BeforeClass
 	public void openBrowser() throws InterruptedException{

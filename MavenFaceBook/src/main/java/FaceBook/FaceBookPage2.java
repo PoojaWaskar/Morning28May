@@ -13,14 +13,14 @@ public class FaceBookPage2 {
 	
 	
 	
-	//Initialization
-	
-	public FaceBookPage2(WebDriver driver) {
-		
-		PageFactory.initElements(driver,this);
-		
-		
-	}
+//	//Initialization
+//	
+//	public FaceBookPage2(WebDriver driver) {
+//		
+//		PageFactory.initElements(driver,this);
+//		
+//		
+//	}
 	
 	public void openRooms1() {
 		room.click();
